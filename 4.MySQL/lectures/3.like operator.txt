@@ -1,0 +1,45 @@
+Insert into personalinfo(id,Name,age,gender,phone,city)
+values(7,"Waleed",25,"Male","536456","karachi");
+
+select * from personalinfo where Name like 'o%';
+select * from personalinfo where city like '%la%';
+select * from personalinfo where gender like 'f%e';
+select * from personalinfo where Name like '_ar%';
+select * from personalinfo where Name Regexp '^a';
+select * from personalinfo where city Regexp 'r$';
+select * from personalinfo where age Regexp '[1]';
+select * from personalinfo order by  age desc ;
+select distinct city from personalinfo  ;
+
+select * from personalinfo where age limit 2,3;
+
+-- Create the table with a numeric data type for the Salary column
+CREATE TABLE salary (
+    id INT PRIMARY KEY,
+    Salary DECIMAL(10, 2) -- Assuming a numeric type for salary, adjust precision and scale as needed
+);
+-- Insert values into the salary table
+INSERT INTO salary (id, Salary) VALUES
+    (1, 10000),
+    (2, 20000),
+    (3, 30000),
+    (4, 40000),
+    (5, 5000);
+-- Retrieve the minimum salary using the MIN function
+SELECT min(Salary) AS min FROM salary;
+-- Create the table with a numeric data type for the Salary column
+CREATE TABLE salary (
+    id INT PRIMARY KEY,
+    Salary DECIMAL(10, 2) -- Assuming a numeric type for salary, adjust precision and scale as needed
+);
+-- Insert values into the salary table
+INSERT INTO salary (id, Salary) VALUES
+    (1, 10000),
+    (2, 20000),
+    (3, 30000),
+    (4, 40000),
+    (5, 5000);
+
+-- Retrieve the minimum salary using the MIN function
+SELECT MIN(Salary) AS MinSalary FROM salary;
+SELECT max(Salary) AS max FROM salary;

@@ -1,0 +1,34 @@
+Create Table personalinfo(
+	id int NOT NULL UNIQUE,
+	Name varchar(50) NOT NULL,
+	age INT NOT NULL CHECK(age>=18),
+	gender VARCHAR(10) NOT NULL,
+	phone VARCHAR(10) NOT NULL UNIQUE,
+	city VARCHAR(10) NOT null DEFAULT 'Karachi'
+);
+Insert into personalinfo(id,Name,age,gender,phone,city)
+values(5,"Okasha",18,"Male","564667675","karachi");
+--  (2,"Ashraf",30,"Male","345664","peshawar"),
+--    (3,"bareera",19,"Female","5645657","lahore"),
+--     (4,"Zarnab",20,"Female","6666478","islamabad");  
+   drop table personalinfo  ; 
+SELECT * FROM personalinfo;
+SELECT Name,phone FROM personalinfo;
+alter table personalinfo add column Email varchar(100);
+alter table personalinfo modify column Email int;
+alter table personalinfo change column Email Email_1 varchar(100);
+alter table personalinfo drop column gender ;
+alter table Studentinfo rename personalinfo;
+select id,Name,age,gender from personalinfo;
+Select id as StudentId, Name as StudentName, city as Destination from personalinfo;
+Select * From personalinfo where city <> "karachi";
+select * from personalinfo where age >=18 AND age <=20 ; 
+select * from personalinfo where age <= 18 AND  gender= "Male" AND city= "karachi";
+select * from personalinfo where city="karachi" OR city="lahore";
+Select * from personalinfo where (city="karachi" OR city="islamabad") And gender= "Male";
+select * from personalinfo where age IN (19,18,28,30) ; 
+select * from personalinfo where id IN (3,4,5) ; 
+select * from personalinfo where city IN ("Karachi","peshawar") ; 
+select * from personalinfo where city Not IN ("Karachi","peshawar") ; 
+select * from personalinfo where id Not between 1 AND 2 ; 
+select * from personalinfo where id  between 1 AND 3 ; 

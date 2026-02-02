@@ -1,0 +1,11 @@
+Create database 2307F3;
+use 2307F3;
+Create table Students(
+Id int ,
+Name varchar(100),
+Email varchar(100)
+
+);
+select * from Students;
+insert into Students(Id,Name,Email) values 
+					(1,"hamna", "Hamna@gmail.com");

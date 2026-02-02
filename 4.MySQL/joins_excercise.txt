@@ -1,0 +1,93 @@
+
+Question no.1
+
+SELECT 
+    Students.StudentID,
+    Students.StudentName,
+    Classes.ClassName
+FROM 
+    Students
+LEFT JOIN 
+    Classes
+ON 
+    Students.ClassID = Classes.ClassID;
+
+
+Question no.2
+
+SELECT 
+    Classes.ClassID,
+    Classes.ClassName,
+    Students.StudentName
+FROM 
+    Students
+RIGHT JOIN 
+    Classes
+ON 
+    Students.ClassID = Classes.ClassID;
+
+Question no.3
+
+SELECT 
+    Classes.ClassID,
+    Classes.ClassName,
+    Teachers.TeacherName
+FROM 
+    Classes
+LEFT JOIN 
+    Teachers
+ON 
+    Classes.ClassID = Teachers.ClassID;
+
+
+Question No.4
+
+SELECT 
+    Students.StudentID,
+    Students.StudentName,
+    Teachers.TeacherName
+FROM 
+    Students
+LEFT JOIN 
+    Teachers
+ON 
+    Students.ClassID = Teachers.ClassID
+UNION
+SELECT 
+    Students.StudentID,
+    Students.StudentName,
+    Teachers.TeacherName
+FROM 
+    Students
+RIGHT JOIN 
+    Teachers
+ON 
+    Students.ClassID = Teachers.ClassID;
+
+
+Question No. 5 
+
+SELECT 
+    Students.StudentID,
+    Students.StudentName,
+    Classes.ClassName
+FROM 
+    Students
+INNER JOIN 
+    Classes
+ON 
+    Students.ClassID = Classes.ClassID;
+
+Question No. 6
+
+SELECT 
+    Products.ProductName,
+    Promotions.PromotionName
+FROM 
+    Products
+CROSS JOIN 
+    Promotions;
+
+
+
+

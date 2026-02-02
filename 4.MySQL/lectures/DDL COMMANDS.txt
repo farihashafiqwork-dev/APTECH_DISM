@@ -1,0 +1,67 @@
+CREATE:
+
+Creating a Database:
+ CREATE DATABASE database_name;
+
+Creating a Table:
+CREATE TABLE table_name (
+    column1_name column1_datatype,
+    column2_name column2_datatype,
+   
+);
+
+example:
+CREATE TABLE employees (
+    id INT,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50)
+    
+);
+
+********************************************************************
+ALTER:
+Adding a Column:
+ALTER TABLE table_name ADD column_name column_datatype;
+example:
+ALTER TABLE employees ADD email VARCHAR(100);
+
+Modifying a Column:
+ALTER TABLE table_name MODIFY column_name new_datatype;
+example:
+ALTER TABLE employees MODIFY email VARCHAR(150);
+
+Dropping a Column:
+ALTER TABLE table_name DROP COLUMN column_name;
+example:
+ALTER TABLE employees DROP COLUMN email;
+*********************************************************************
+DROP:
+Dropping a Database:
+DROP DATABASE database_name;
+
+Dropping a Table:
+DROP TABLE table_name;
+
+*********************************************************************
+TRUNCATE:
+TRUNCATE TABLE table_name;
+
+*********************************************************************
+RENAME:
+RENAME TABLE old_table_name TO new_table_name;
+example:
+RENAME TABLE employees TO staff;
+
+
+
+
+
+**************************************************************
+
+
+alter table employees add age varchar(30);
+alter table employees modify age varchar(50);
+alter table employees drop column age;
+RENAME TABLE employees TO staff;
+
+
