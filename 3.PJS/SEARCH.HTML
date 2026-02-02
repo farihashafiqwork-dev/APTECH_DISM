@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regex Search on Input Fields with Object Data</title>
+</head>
+<body>
+  <form id="searchForm">
+    <label for="inputText">Enter text:</label>
+    <input type="text" id="inputText" name="inputText">
+    <button type="button" onclick="searchData()">Search</button>
+  </form>
+  <p id="result"></p>
+
+  <script>
+    // Sample data stored in an object
+    const data = {
+      1: "Hello World",
+      2: "JavaScript is awesome",
+      3: "Regular expressions are powerful",
+      4: "Regex can be tricky",
+      5: "Practice makes perfect"
+    };
+
+    function searchData() {
+      const inputText = document.getElementById('inputText').value;
+      const regex = new RegExp('^'+inputText, 'i'); // Create regex based on user input (case-insensitive)
+      const resultElement = document.getElementById('result');
+      
+      let matches = [];
+      
+      for (let key in data) {
+        if (regex.test(data[key])) {
+          matches.push(data[key]);
+        }
+      }
+      
+      if (matches.length > 0) {
+        resultElement.textContent = 'Matches found: ' + matches.join(', ');
+      } else {
+        resultElement.textContent = 'No matches found.';
+      }
+    }
+  </script>
+</body>
+</html>
+ 

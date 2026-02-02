@@ -1,0 +1,1 @@
+document.write("batch:2304G1")

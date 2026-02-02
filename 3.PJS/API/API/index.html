@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-image: url('https://unblast.com/wp-content/uploads/2021/01/Space-Background-Image-3.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 99vh;
+            width: 99vw;
+            line-height: 20px;
+
+        }
+
+        h1 {
+            font-size: 100px;
+            position: absolute;
+            top: 50px;
+            left: 240px;
+            color: white;
+        }
+
+        input {
+            width: 300px;
+            height: 50px;
+            border-radius: 15px;
+            border: none;
+            color: rgb(250, 87, 12);
+            position: absolute;
+            left: 400px;
+            top: 220px;
+            font-size: 18px;
+        }
+
+        button {
+            height: 50px;
+            width: 140px;
+            border-radius: 15px;
+            border: none;
+            font-size: 15px;
+            font-weight: 600;
+            position: absolute;
+            left: 710px;
+            top: 220px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(32, 25, 25);
+            color: rgb(252, 249, 244);
+            transition: 0.4s ease;
+        }
+
+        .p {
+            color: rgb(255, 255, 255);
+            display: inline-flex;
+            font-size: 30px;
+            position: absolute;
+            font-weight: 700;
+            top: 320px;
+            line-height: 35px;
+
+        }
+        .p p{
+          
+            font-size: 20px;
+            margin: 1%;
+            
+
+        }
+
+
+
+        #writer {
+            margin-left: 15px;
+        }
+
+        #year {
+            margin-left: 15px;
+        }
+
+        #released {
+            margin-left: 15px;
+
+        }
+
+        #cast {
+            margin-left: 15px;
+
+        }
+        #poster {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="text-center">Enter Movie Name</h1>
+    <input type="text" name="" id="text" placeholder="Type Movie Name Here">
+    <button type="button" onclick="getapi()">Submit</button>
+    <div class="p">
+        <p id="title"></p>
+        <p id="writer"></p>
+        <p id="year"></p>
+        <p id="released"></p>
+        <p id="cast"></p>
+        <p><img src="" alt="" id="poster"></p>
+       
+    </div>
+
+    <script>
+        async function getapi() {
+            var x = document.getElementById("text").value;
+            const api_url = "https://www.omdbapi.com/?t=" + x + "&apikey=7795c016";
+            const response = await fetch(api_url);
+            var data = await response.json();
+
+            document.getElementById("writer").innerHTML = "<h2>Writer:</h2>" + data.Writer;
+            document.getElementById("title").innerHTML = "<h2>Title:</h2>" + data.Title;
+            document.getElementById("year").innerHTML = "<h2>Year:</h2>" + data.Year;
+            document.getElementById("released").innerHTML = "<h2>Released:</h2>" + data.Released;
+            document.getElementById("cast").innerHTML = "<h2>Actors:</h2>" + data.Actors;
+            document.getElementById("poster").src = data.Poster 
+      
+        }
+    
+     
+
+    </script>
+</body>
+
+</html>

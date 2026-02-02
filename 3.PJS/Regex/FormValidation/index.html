@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+   <script src="JS/script.js"></script>
+</head>
+<body>
+    <div class="container">
+            <div class="image-slider">
+                <img src="images/img1.png" alt="">
+         
+            </div>
+      
+
+        <div class="myform">
+            <h2>Create your account</h2>
+            <form onsubmit="validateForm()">
+                <label for="">Name <i class="fa-solid fa-user fa-sm" style="color: #000000;" ></i> </label>
+                <input type="text" id="name" required title="Enter alphabets only" onblur="validateName()">
+                <b id="b1"></b>
+                <label for="">Email <i class="fa-solid fa-at fa-sm" style="color:#000000;" ></i></label>
+                <input type="email" id="email" required title="Enter email: example@gmail.com" onblur="validateEmail()">
+                <b id="b2"></b>
+                <label for="">Password <i class="fa-solid fa-lock fa-sm" style="color:#000000;"></i></label>
+                <input type="password" id="password" required title="Must be atleast a digit, an uppercase alphabet, a lowercase alphabet and minimum length should be 8" onblur="validatePassword()" >
+                <b id="b3"></b>
+                <br>
+                <input type="checkbox" name="" id="" required >Remember me
+                <br> 
+                <input type="submit" value="Create new account" onclick="validateForm()">
+            </form>
+            <p>Already have an account? <span>Sign in</span></p> 
+            <hr>
+           <p>By clicking Sign Up you agree to <span>Terms</span> & <span>Privacy Policy</span></p> 
+        </div>
+    </div>
+</body>
+</html>

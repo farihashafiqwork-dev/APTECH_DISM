@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Form Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        button {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Complete Form Example</h1>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+
+        <label for="phone">Pakistani Phone Number:</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" pattern="^(\+92|0)[0-9]{10}$" title="Please enter a valid 11-digit Pakistani phone number" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var password = document.getElementById("password").value;
+            var phone = document.getElementById("phone").value;
+            var email = document.getElementById("email").value;
+
+            // Password should be at least 8 characters long
+            // Pakistani phone number validation (11 digits)
+            // Basic email validation
+            var passwordRegex = /[a-zA-Z\W]{8,}/;
+            var phoneRegex = /^(\+92|0)[0-9]{10}$/
+            var emailRegex = /^[a-zA-Z0-9._-]+@+[a-zA-Z.]+\.[a-zA-Z]{2,4}$/;
+        
+
+            if (password.match(passwordRegex) && phone.match(phoneRegex) && email.match(emailRegex)) {
+                alert("Validation successful: All good!");
+            } else {
+                alert("Validation failed: Please check your input fields.");
+            }
+        }
+        
+    </script>
+</body>
+
+</html>

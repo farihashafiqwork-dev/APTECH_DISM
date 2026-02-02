@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- without parameter -->
+
+    <!-- <script>
+        var hello = () => {console.log("This is an arrow function") }
+        hello();
+    </script> -->
+
+   <!-- with single parameter and return value -->
+    <script>
+        var user = (name) => {
+            // const name = prompt("Enter name")
+            return `Hello & Welcome ${name}`;
+        }
+      document.write(user("FARIHA"))
+    </script>
+
+     <!-- with double parameter and return value -->
+<!--     
+    <script>
+        var user = (name,age) => {
+            return `Hello & Welcome ${name}.Your age is ${age} `;
+        }
+
+        console.log(user("FARIHA SHAFIQ",201))
+    </script> -->
+     
+    <script>
+        var sum = () => {
+            const a= parseInt(prompt("Enter number 1"))
+            const b= parseInt(prompt("Enter number 2"))
+            const sum = a+b
+            document.write(`The sum is ${sum}`)
+        }
+        sum();
+    </script>
+
+</body>
+</html>

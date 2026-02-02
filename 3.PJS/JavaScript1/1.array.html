@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+    <script>
+                                             //One-dimensional array
+    var inputs = new Array();
+    while (inputs.length <5) {
+    var value = prompt('Enter a value (or click "Cancel" to finish):');
+    if (value === null) {
+        alert("No value entered");
+        break;
+        
+    }
+    inputs.push(value);
+    }
+    // document.write('Yor Array List is <br>',inputs); // for printing array in one line
+
+    //For print array in different line
+    for (let i = 0; i < inputs.length; i++) {
+    document.write(inputs[i]+"<br>");
+    } 
+
+    </script>
+
+   
+</body>
+</html>

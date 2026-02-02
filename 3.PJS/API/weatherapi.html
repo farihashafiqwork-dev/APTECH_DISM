@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" id="city"> 
+        <input type="button" value="submit" onclick="weatherapi();">
+    </form>
+    <p id="weather"></p>
+    <img src="" alt="" id="z">
+    <script>
+         async function weatherapi(){
+         var  city=document.getElementById("city").value;
+        
+            api_url= "https://api.openweathermap.org/data/2.5/weather?q="+city+"&units=metric&appid=40c8cfbeb3db1de909a05c7f042affb9"
+
+       
+           const response= await fetch(api_url);
+           const data= await response.json();
+
+           var result=document.getElementById("weather").innerHTML="Temperature:" +data.main.temp +"<br>"+ "Feels like"+ data.main.feels_like +"<br>"+data.name+"<br>"+data.clouds.all+"<br>"+data.weather[0].main+"<br>"+data.weather[0].description;
+
+
+           var y=data.weather[0].icon;
+           
+           var link="https://openweathermap.org/img/w/"+y+".png"
+                    document.getElementById("z").src=link
+
+        }
+    </script>
+</body>
+</html>

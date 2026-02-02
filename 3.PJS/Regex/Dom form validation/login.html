@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="h2">Login System</h2>
+<form id="myForm">
+    <label for="fullname">Username:</label>
+    <input type="text" id="fullname">
+    <br> <br>
+    <label for="pw">Password</label>
+    <input type="password" name="pass" id="pw">
+    <br> <br>
+    <button type="button" onclick="logindetails()">Submit</button>
+</form>
+   
+    <p></p>
+    <script>
+        function logindetails(){
+            var username= document.getElementById("fullname").value;
+            var password= document.getElementById("pw").value;
+
+            if (username=="Nashmia" || username=="FARIHA"  && password=="123") {
+                document.getElementsByTagName("p")[0].innerHTML="Username is: " +username + "<br> Password is: " +password
+                document.getElementById("myForm").reset();
+
+            } else {
+                alert("Login Failed");
+            }
+           
+
+        }
+    </script>
+</body>
+</html>

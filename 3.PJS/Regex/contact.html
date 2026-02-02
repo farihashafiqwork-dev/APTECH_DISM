@@ -1,0 +1,58 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Regex</title>
+</head>
+<body>
+
+    <script>
+        
+        var num = prompt("Enter Your Contact Number:");
+
+        var regex = /^(\+92|0)[0-9]{10}$/;
+
+        if(num.match(regex))
+        {
+            document.write("Your Credentials is valid!");
+        }
+        else
+        {
+            document.write("Your Credentials isn't valid!");
+        }
+        
+    </script>   
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Number Validation</title>
+</head>
+<body>
+    <form id="contactForm">
+        <label for="contactNumber">Enter Your Contact Number:</label>
+        <input type="text" id="contactNumber" name="contactNumber">
+        <input type="button" value="Submit" onclick="validateForm()">
+    </form>
+ <p id="p1"></p>
+    <script>
+        function validateForm() {
+            var num = document.getElementById("contactNumber").value;
+            var regex = /^(\+92|0)[0-9]{10}$/;
+
+            if (num.match(regex)) {
+                document.getElementById("p1").innerHTML = "Your valid contact number is:" +num
+              
+            } else {
+                alert("Invalid Contact Number! Please enter a valid contact number.");
+               
+            }
+        }
+    </script>
+</body>
+</html>

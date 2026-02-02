@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-center">Enter Movie Name</h1>
+<input type="text" id="text" placeholder="Type Movie Name Here">
+<button type="button" onclick="getapi()">Submit</button>
+
+<div class="p">
+    <p id="title"></p>
+    <p id="writer"></p>
+    <p id="year"></p>
+    <p id="released"></p>
+    <p id="cast"></p>
+    <p><img src="" alt="" id="poster"></p>
+</div>
+<script>
+    async function getapi() {
+    
+        const movieName = document.getElementById("text").value;
+    
+        const api_url =
+            "https://www.omdbapi.com/?t=" +
+            encodeURIComponent(movieName) +
+            "&apikey=7795c016&r=xml";
+    
+        const response = await fetch(api_url);
+        const xmlText = await response.text();
+    
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlText, "application/xml");
+    
+        const movie = xmlDoc.getElementsByTagName("movie")[0];
+    
+        if (!movie) {
+            alert("Movie not found");
+            return;
+        }
+    
+        document.getElementById("title").innerHTML =
+            "<h2>Title:</h2>" + movie.getAttribute("title");
+    
+        document.getElementById("writer").innerHTML =
+            "<h2>Writer:</h2>" + movie.getAttribute("writer");
+    
+        document.getElementById("year").innerHTML =
+            "<h2>Year:</h2>" + movie.getAttribute("year");
+    
+        document.getElementById("released").innerHTML =
+            "<h2>Released:</h2>" + movie.getAttribute("released");
+    
+        document.getElementById("cast").innerHTML =
+            "<h2>Actors:</h2>" + movie.getAttribute("actors");
+    
+        document.getElementById("poster").src =
+            movie.getAttribute("poster");
+    }
+    </script>
+    
+</body>
+</html>

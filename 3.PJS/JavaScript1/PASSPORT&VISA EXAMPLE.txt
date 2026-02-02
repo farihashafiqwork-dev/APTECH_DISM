@@ -1,0 +1,10 @@
+let hasPassport = true;
+let hasVisa = false;
+
+if (hasPassport && hasVisa) {
+    console.log("You can travel abroad.");
+} else if (hasPassport && !hasVisa) {
+    console.log("You need a visa to travel abroad.");
+} else {
+    console.log("You cannot travel abroad.");
+}

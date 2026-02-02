@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="country">Country:</label>
+        <select id="country" onchange="populateCities()">
+            <option value="">Select a country</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+        </select>
+
+        <br> <br>
+
+        <label for="city">City:</label>
+        <select id="city"></select>
+
+        <br> <br>
+
+        <input type="submit" value="Submit" onclick="FormSubmit()">
+    </form>
+
+    <script>
+        
+        function populateCities() {
+            var country = document.getElementById("country").value;
+            var city = document.getElementById("city");
+            
+            if (country == "usa") {
+                city.innerHTML = `
+                <option value="">Select a city</option>
+                    <option value="Newyork">New York</option>
+                    <option value="Losangeles">Los Angeles</option>
+                    <option value="Chicago">Chicago</option>
+                `;
+            } else if (country == "canada") {
+                city.innerHTML = `
+                    <option value="">Select a city</option>
+                    <option value="Toronto">Toronto</option>
+                    <option value="Vancouver">Vancouver</option>
+                    <option value="Montreal">Montreal</option>
+                `;
+            } 
+             else {
+                city.innerHTML = '<option value="">Select a country first</option>';
+            }
+        }
+        function FormSubmit ()
+        {
+            var country = document.getElementById("country").value;
+
+            var city = document.getElementById("city").value;
+
+            document.write("Selected Country is: ", country); 
+            
+            document.write("<br <br>");
+            
+            document.write("Selected City is: ", city);
+        }
+        
+    </script>
+    
+</body>
+</html>

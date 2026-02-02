@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- <form action="">
+            <label for="">Country</label>
+        <select name="" id="country" onchange="popcity()">
+            <option value="" >Select a country</option>
+            <option value="Canada">Canada</option>
+            <option value="Usa">Usa</option>
+        </select>
+        <br> <br>
+        <label for="">City</label>
+        <select name="" id="city"></select>
+        <br> <br>
+        <input type="submit" value="Submit" onclick="formsub()">
+        </form>
+        
+
+        <script>
+            function popcity(){
+                var country = document.getElementById("country").value;
+                var city = document.getElementById("city");
+
+                if(country == "Canada") {
+                    city.innerHTML = 
+                    `
+                    <option>select an option </option>
+                     <option>Toronto</option>
+                     <option>Calgary</option>
+                     `;
+                }
+                else if(country == "Usa") {
+                    city.innerHTML = 
+                    `<option >select an option</option>
+                     <option>Chicago</option>
+                     <option>Newyork</option>
+                     `;
+                }
+                else {
+                    city.innerHTML="<option>select a country first</option>"
+                }
+            }
+
+            function formsub(){
+                var country = document.getElementById("country").value;
+                var city = document.getElementById("city").value;
+                document.write("Selected country is:",country + "<br>");
+                document.write("Selected city is: ",city);
+            }
+        </script> -->
+
+
+        <form action="">
+            <label for="">Country</label>
+            <select name="" id="country" onchange="popcity()">
+                <option value="">Select a country</option>
+                <option value="Canada">Canada</option>
+                <option value="Usa">Usa</option>
+            </select>
+            <br> <br>
+            <label for="">City</label>
+            <select name="" id="city"></select>
+            <br> <br>
+            <input type="submit" value="Submit" onclick="formsub()">
+        </form>
+        
+        <script>
+            function popcity() {
+                var country = document.getElementById("country").value;
+                var city = document.getElementById("city");
+        
+                if (country == "Canada") {
+                    city.innerHTML =
+                    `<option disabled selected>select an option</option>
+                     <option>Toronto</option>
+                     <option>Calgary</option>
+                     `;
+                }
+                else if (country == "Usa") {
+                    city.innerHTML =
+                    `<option disabled selected>select an option</option>
+                     <option>Chicago</option>
+                     <option>Newyork</option>
+                     `;
+                }
+                else {
+                    city.innerHTML = "<option>select a country first</option>"
+                }
+            }
+        
+            function formsub() {
+    var country = document.getElementById("country").value;
+    var city = document.getElementById("city").value;
+    
+    if (city !== "select an option") {
+        document.write("Selected country is:", country + "<br>");
+        document.write("Selected city is: ", city);
+    }
+}
+
+        </script>
+        
+</body>
+</html>

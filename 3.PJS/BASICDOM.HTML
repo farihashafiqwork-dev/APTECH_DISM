@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        name: <input type="text" id="nm">
+        <input type="button" value="Submit" onclick="add_data();">
+    </form>
+    <p id="para"></p>
+</body>
+</html>
+<script>
+    function add_data(){
+        let abc=document.getElementById('nm').value;
+        let para=document.getElementById('para').innerHTML=abc;
+
+    }
+</script>

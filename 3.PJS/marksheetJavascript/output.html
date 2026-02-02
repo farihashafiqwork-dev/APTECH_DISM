@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="outputstyle.css">
+<script>
+function myFunction() {
+    var Username = sessionStorage.getItem('Username');
+    var Father = sessionStorage.getItem('Father');
+    var Roll = sessionStorage.getItem('Roll');
+    var Class= sessionStorage.getItem('Class');
+    var Eng= sessionStorage.getItem('Eng');
+    var Chem= sessionStorage.getItem('Chem');
+    var Phy = sessionStorage.getItem('Phy');
+    var Mat= sessionStorage.getItem('Math');
+    var Urdu= sessionStorage.getItem('Urdu');
+    var Pst= sessionStorage.getItem('PST');
+    var Total = sessionStorage.getItem('total');
+    var Perc = sessionStorage.getItem('Perc');
+    var Grade = sessionStorage.getItem('Grade');
+
+ document.getElementById('nm').innerHTML = Username;
+ document.getElementById('fthrnm').innerHTML = Father;
+ document.getElementById('rolno').innerHTML = Roll;
+ document.getElementById('cls').innerHTML = Class;
+ document.getElementById('Engmarks').innerHTML = Eng;
+ document.getElementById('Chemistrymarks').innerHTML = Chem;
+ document.getElementById('Physicsmarks').innerHTML = Phy;
+ document.getElementById('mathmarks').innerHTML = Mat;
+ document.getElementById('urdumarks').innerHTML = Urdu;
+ document.getElementById('Pstmarks').innerHTML = Pst;
+ document.getElementById('Total').innerHTML = Total;
+ document.getElementById('percentage').innerHTML = Perc;
+ document.getElementById('Grading').innerHTML = Grade;
+}
+</script>
+
+</head>
+<body onload="myFunction()">    
+    <div class="sheet">
+        
+        <h1><u>BOARD OF INTERMEDIATE EDUCATION KARACHI</u></h1>
+        <h3 class="stat">H.S.C PART-I INRERMEDIATE EXAMINATION (ANNUAL-2022)</h3>
+          <h2>Statement of Marks</h2>
+  <p9><b>Marks Sheet No.</b> </p9> 00180606-2
+           <table> <!--class="data"-->  
+                 
+                      
+                 
+                  <tr>
+                      <td><h3>Name: <span id="nm"> </span></h3></td>
+                  </tr>
+  
+                  <tr>
+                      <td><h3>Father Name:<span id="fthrnm"> </span></h3></td>
+                  </tr>
+                   
+                  <tr> 
+                      <td><h3>Roll No:  <span id="rolno"> </span></h3></td>
+                  </tr>
+  
+                  <tr>
+                      <td><h3>College Name  <span id="cls"> </span></h3></td>
+                  </tr>
+  
+              </table>
+  <div class="c">
+  <table border="1px">
+    <tr>
+      <td align="center">S.no</td>
+      <td align="center">Subjects</td>
+     <td align="center"> Max.Marks</td>
+     <td align="center">Obtained Marks</td>
+    </tr>
+  
+    <tr>
+      <td align="center">1</td>
+      <td align="center">English</td>
+      <td align="center">50</td>
+      <td id="Engmarks" align="center"></td>
+    </tr>
+  
+    <tr>
+      <td align="center">2</td>
+      <td align="center">Mathematics</td>
+      <td align="center">50</td>
+      <td id="mathmarks" align="center"></td>
+    </tr>
+  
+    <tr>
+      <td align="center">3</td>
+      <td align="center">Urdu</td>
+      <td align="center">50</td>
+      <td id="urdumarks" align="center"></td>
+    </tr>
+  
+    <tr>
+      <td align="center">4</td>
+      <td align="center">Physics</td>
+      <td align="center">50</td>
+      <td id="Physicsmarks" align="center"></td>
+    </tr>
+  
+    <tr>
+      <td align="center">5</td>
+      <td align="center">Chemistry</td>
+      <td align="center">50</td>
+      <td id="Chemistrymarks" align="center"></td>
+    </tr>
+  
+    <tr>
+      <td align="center">6</td>
+      <td align="center" class="sub">Pakistan-Studies</td>
+      <td align="center">50</td>
+      <td id="Pstmarks" align="center"></td>
+    </tr>
+  
+    <tr>
+      <td align="center"><b>-</b></td>
+      <td align="center"><b>Total</b></td>
+      <td align="center"><b>300</b></td>
+      <td id="Total" align="center"></td>
+    </tr>
+  
+  </table>
+  
+  
+   
+  
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+         
+          <br>
+          <table class="repeat">
+  
+             
+              <tr>
+                  <td>Percentage:</td> 
+                  <td id="percentage"></td>
+              </tr>
+  
+              <tr>
+                  <td>Grade:</td>
+                  <td id="Grading"></td>
+              </tr>
+           
+  
+  
+          </table>
+      <h4 class="dat">Date: December 18, 2022</h4><br><br><br><br><br><br>
+      <h4 ><samp class="eo">Errors And Ommisions Excepted</samp><br></h4>
+</body>
+</html>

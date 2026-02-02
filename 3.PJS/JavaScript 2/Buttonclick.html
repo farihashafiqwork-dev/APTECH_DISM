@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="name">Name:</label> <input name="nam" type="text" id="name"><br>
+     <br> <br>
+    <button onclick="MyFunction()">Enter</button>
+ 
+    <script>
+
+function MyFunction(){
+        
+        var x= document.getElementsByName("nam")[0].value;
+
+        // var x=document.getElementById("name").value;
+
+        document.write("You Enter :" +x+ "<br>");
+        if(x=="")
+        {
+        document.write("Please enter your name: ");
+        }
+
+        else if(x=="Nashmia")
+        {
+            document.write(" You're a Teacher");  
+        }
+        
+        else
+        {
+            document.write(" You're a Student"); 
+        }
+    }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+
+
+    <p id="a1"></p>
+    <p id="a2"></p>
+    <p id="a3"></p>
+    <script>
+        var sum=0;
+
+        //Blocking Script
+// document.getElementById("a1").innerHTML="hi"
+// for(var i=1;i<=100000000;i++){
+  // sum+=i;
+ //}
+//  document.getElementById("a2").innerHTML=sum
+// document.getElementById("a3").innerHTML="bye"
+
+
+//Non Blocking Script
+document.getElementById("a1").innerHTML="hi"
+setTimeout(() => {
+    for(var i=1;i<=100000000;i++){
+    sum+=i;
+}
+document.getElementById("a2").innerHTML=sum
+});
+document.getElementById("a3").innerHTML="bye"
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

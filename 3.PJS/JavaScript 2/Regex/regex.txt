@@ -1,0 +1,24 @@
+^= ^god
+$= god$
+\b=of\b (end of the boundary)
+\b=\bof (start of the boundary)
+\B=\Bof\B (BETWEEN)
+()=(ABC) (for group of characters)
+|=(ABC)|(XYZ) (or)
+[]=[abc] (only combinations of these character)
+[^]=[^abc] (except these combination)
+\w=[\w] only numbers and alphabets
+\d=[\d] only digits
+\D=[\D] except only non digits including special charachters
+\s=\sbar (search single space charachter)
+{}=[a-z]{3,7} 
+
+
+
+User name= [a-zA-Z_]{3,20}
+email address=[a-zA-Z0-9_.]+@+((gmail.com)|(hotmail.com))
+		[a-zA-Z0-9_.]+@+[a-zA-Z.]{3,}
+phone number=(\+92|0)[0-9]{10}
+enrollment:
+		(Student)+[0-9]{3}|(employee)+[0-9]{3}
+password= ([\w\d\D]{8,})

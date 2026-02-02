@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+        font-family:Arial, Helvetica, sans-serif ;
+   
+        margin: 0;
+        background-color: rgb(255, 222, 255);
+    }
+
+    .grid-container{
+        background-color:turquoise ;
+        width: 1300px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 120px 60px 100px 400px 60px;
+        gap: 10px 10px;
+        margin: 0 auto;
+    }
+    .Header{
+        background-color: coral;
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+    }
+    .Menu{
+        background-color: rgb(46, 146, 37);
+        grid-column: 1 / 4;
+        grid-row: 2 / 3 ;
+    }
+    .Box1{
+        background-color: rgb(106, 80, 255);
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        
+    } .Box2{
+        background-color: rgb(255, 80, 240);
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+        
+    } .Content{
+        background-color: rgb(80, 220, 255);
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+        
+    } .Slider{
+        background-color: rgb(197, 161, 150);
+        grid-column: 3 / 4;
+        grid-row: 3 / 5;
+        
+    } .Footer{
+        background-color: rgb(179, 179, 179);
+        grid-column: 1 / 4;
+        grid-row:  5 / 6; 
+        text-align: center;
+    }
+        
+        img{
+            width: 150px;
+            margin: 20px 20px;
+        }
+        .grid-container > div {
+            padding: 0px 20px;
+        }
+        ul{
+            list-style-type: none;
+            text-align: end;
+            color: whitesmoke;
+            padding: 5px 5px;
+        }
+
+        ul li {
+            list-style-type: none;
+            display: inline;
+            margin: 0 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container" id="hello">
+
+        <div class="Header">
+        <img src="aptechlogo.png" alt=""> 
+        </div>
+        <div class="Menu">
+           <ul>
+            <li>Home</li>
+            <li>Gallery</li>
+            <li>Contact-us</li>
+            <li>About</li>
+           </ul>
+        </div>
+        <div class="Box1">
+           <h1> BOX1</h1>
+        </div>  
+        <div class="Box2">
+            <h1>BOX2</h1>
+        </div>
+        <div class="Slider">
+         <h1>SLIDER</h1>
+        </div>
+        <div class="Content">
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti sequi saepe velit animi voluptatem quas corporis ab. Praesentium voluptatem atque laboriosam obcaecati officia aperiam minima molestiae ullam earum, laborum autem non est maxime nemo ea, neque sunt saepe nulla? Pariatur repellat, architecto labore rem aliquid nostrum! Obcaecati eaque similique quo a. Delectus obcaecati natus dolore ullam hic magni, minus explicabo enim quasi qui similique rem unde alias at dicta quaerat nam recusandae consequuntur, eaque voluptatibus saepe nesciunt quisquam, eius magnam. Cumque esse alias reprehenderit aperiam voluptatem, cum nam deserunt quibusdam animi maxime iusto exercitationem labore repellat illo repellendus, optio, pariatur facere quidem quis amet. Nesciunt, iusto quaerat? Sapiente quos fuga suscipit dolorum enim cumque corrupti sint. Exercitationem animi numquam culpa magnam voluptates, perferendis beatae sint dicta reprehenderit, perspiciatis nostrum odit quam vero itaque quas incidunt quidem possimus laboriosam voluptate cum officiis. In eius exercitationem eaque. Fuga, aperiam eum quia velit soluta et non dolor laudantium, magnam aut ut officiis suscipit ex, architecto atque molestias esse quaerat dolorem! Officiis excepturi id exercitationem, iste amet totam consectetur tempora sapiente ad similique, recusandae impedit ex reiciendis repellat voluptatum hic earum blanditiis suscipit. Optio delectus dignissimos quasi sit officiis ut aperiam iure quibusdam quae laudantium. Magni similique, a numquam molestiae fugit quasi nostrum hic facilis labore. Dolore nihil dolorem praesentium dicta sapiente eligendi, officia distinctio porro. Temporibus consequatur doloribus ducimus quas iusto voluptatem corporis error nemo quidem aut, soluta aliquam, asperiores eligendi corrupti eum quia ut vitae. Facilis temporibus pariatur laboriosam soluta voluptatem, ea veniam quae nihil </p>
+        </div>  
+        <div class="Footer">
+          <p>  &copy; All right reserved</p>
+        </div>
+
+      </div>
+
+
+      <script>
+        var element;
+    element=document.getElementById("hello").innerText;
+        console.log(element)
+
+        element=document.getElementById("hello").innerHTML;
+        console.log(element)
+      </script>
+</body>
+</html>

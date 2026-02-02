@@ -1,0 +1,175 @@
+*{
+    margin:0px;
+   }
+body{
+    background-color: aquamarine;
+}
+.head
+{
+    color: rgb(255, 161, 161);
+    background-color: rgb(8, 8, 82);
+    margin-top: 15px;
+    padding: 30px;
+    text-align: center;
+    font-weight: 300;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    border: 2px solid rgb(0, 0, 26);
+}
+.b{
+    color:rgb(228, 166, 228);
+}
+form
+{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+        gap: 10px;
+}
+
+input
+{
+    width: 35%;
+    height: 2em;
+    border-radius: 5px;
+    
+    border:2px solid purple;
+}
+
+input
+{
+    color: rgb(15, 51, 255);
+    font-size:15px;
+}
+
+input::placeholder
+{
+    font-family:Arial, Helvetica, sans-serif;
+    color: grey;
+    padding: 2px;
+    text-align: center;
+}
+
+   
+.sheet
+{
+    background-color: rgb(226, 215, 247);
+    width:80%;
+    height:800px ;
+    margin-left: 60px;
+    padding: 3%;
+    padding-left: 6%;
+    border: 3px solid rgb(146, 0, 97);
+    border-style: dashed;
+}
+.sheet h1{
+    
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+.sheet h2{
+    color:rgb(61, 1, 61);
+    font-weight: 700;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.stat{
+    text-align: center;
+}
+.table
+{
+   margin-left: 15rem;
+}
+
+.repeat
+{
+    /* margin-left: 18rem; */
+    font-weight: bolder;
+    font-size:20px;
+}
+ 
+button
+{
+    color:rgb(41, 0, 34);
+    padding: 15px;
+    background-color: rgba(196, 55, 231, 0.712);
+   border: 2px solid rgba(100, 0, 125, 0.712);
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 2%;
+    margin-top: 10px;
+    width:17%;
+}
+
+button:hover
+{
+    background-color: rgb(56, 0, 61);
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(209, 216, 150);
+}
+
+
+
+.table
+{
+   margin-left: 100px;
+}
+#nm,#fthrnm,#cls{
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    color: black;
+}
+#rolno{
+    margin-left: 20px;
+    color: rgb(114, 114, 114);
+}
+p{
+            color: rgb(13, 107, 4);
+        }
+        p1{
+            color: rgb(32, 142, 156);
+        }
+        p2{
+            color: rgb(187, 163, 28);
+        }
+        p3{
+            color: rgb(255, 115, 0);
+        }
+        p4{
+            color: red;
+        }
+        .c{
+            border: 2px solid darkmagenta;
+           width: fit-content;
+           word-spacing: 9px;
+           padding: 4px;
+           margin-left: 150px;
+           font-size: 20px;
+        }
+       
+.d{
+    word-spacing: 20px;
+}
+p9{
+    font-weight: 900;
+    font-size: larger;
+    font-style: oblique;
+}
+#nm,#cls{
+    margin-left: 97px;
+}
+#fthrnm{
+    margin-left: 47px
+}
+#rolno{
+    margin-left: 82px;
+}
+.dat{
+    margin-left: 800px;
+}
+#cls{
+    font-weight: 500;
+}

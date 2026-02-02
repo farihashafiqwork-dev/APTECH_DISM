@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // First
+        var students=[
+            ["Summaiya",1001,"Female","Masters"],
+            ["Sidra",1002,"Female","PNO"],
+            ["Hamna",1003,"Female","BFD"],
+            ["Aneela",1004,"Female","Masters"],
+            ["Aneela",1005,"Female","Masters"]
+        ]
+    //   document.write(students[3])
+
+        // // console.log(students);
+        // document.write(students);
+        // // document.write("<br>"+ary.length);
+
+
+
+
+document.write("<table border='1px'>")
+for(var a=0; a<students.length ; a++){
+    document.write("<tr >")
+    for(var b=0; b<students[a].length; b++){
+        document.write( "<td>"+students[a][b]+"</td>");
+    }
+    // document.write( "<br>");
+    document.write( "</tr>");
+
+}
+document.write("</table >")
+
+
+    </script>
+</body>
+</html>

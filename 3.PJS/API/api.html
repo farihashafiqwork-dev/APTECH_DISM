@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter Movie Name: <input type="text" id="t">
+    <button type="button" onclick="getapi();">Submit</button>
+    <p id="Title"></p>
+    <p id="Writer"></p>
+    <p id="Year"></p>
+    <p id="Released"></p>
+    <p id="cast"></p>
+    <p><img src="" id="poster" alt=""></p>
+    
+    <script>
+         async function getapi() {
+        var x=document.getElementById("t").value;
+        const api_url = "https://www.omdbapi.com/?t="+x+"&apikey=ec03d09";
+ 
+    const response = await fetch(api_url);
+    var data = await response.json();
+
+    document.getElementById("Writer").innerHTML = "Writer: "+data.Writer;
+    document.getElementById("Title").innerHTML = "Title: "+data.Title;
+    document.getElementById("Year").innerHTML = "Year: "+data.Year;
+    document.getElementById("Released").innerHTML = "Released: "+data.Released;
+    document.getElementById("cast").innerHTML = "cast: "+data.Actors;
+    document.getElementById("poster").src=data.Poster;
+ 
+         }
+
+</script>
+
+
+</body>
+</html>
