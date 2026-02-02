@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="info.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<person>
+<age>11</age>
+<name>abdfdh</name>
+
+</person> 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aptech [
+  <!ELEMENT aptech (employee*)>
+  <!ELEMENT employee (id,name)>
+  <!ELEMENT id (#PCDATA)>
+  <!ELEMENT name (#PCDATA)>
+]>
+<aptech>
+<employee>
+<id>123</id>
+<name>Fariha</name>
+</employee>
+<employee>
+<id>123</id>
+<name>Fariha</name>
+</employee>
+<employee>
+<id>123</id>
+<name>Fariha</name>
+</employee>
+</aptech>

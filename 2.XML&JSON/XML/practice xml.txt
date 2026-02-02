@@ -1,0 +1,58 @@
+<!DOCTYPE aptech [
+    <!ELEMENT aptech (dept*)>
+    <!ELEMENT dept (dept_name, no_of_employees, avg_salary)>
+    <!ATTLIST dept
+        gown_color CDATA #REQUIRED
+        years CDATA "2000">
+    <!ELEMENT dept_name (#PCDATA|center|location)*>
+    <!ELEMENT center (#PCDATA)>
+    <!ELEMENT location (#PCDATA)>
+    <!ELEMENT no_of_employees (#PCDATA)>
+    <!ELEMENT avg_salary (#PCDATA)>
+    <!ELEMENT floor (#PCDATA)>
+    <!ELEMENT labs (#PCDATA)>
+
+    <!-- Academics department must have at least one labs element -->
+    <!ELEMENT acadamics (dept_name, no_of_employees, avg_salary, labs+)>
+    <!ELEMENT labs (#PCDATA)>
+
+    <!-- Accounts and HR departments -->
+    <!ELEMENT accounts (dept_name, no_of_employees, avg_salary)>
+    <!ELEMENT hr (dept_name, no_of_employees, avg_salary)>
+]>
+<aptech>
+    <dept gown_color="blue">
+        <dept_name>
+            <center>Aptech</center>
+            <location>New York</location>
+        </dept_name>
+        <no_of_employees>50</no_of_employees>
+        <avg_salary>60000</avg_salary>
+    </dept>
+    <accounts gown_color="green">
+        <dept_name>
+            <center>Aptech</center>
+            <location>New York</location>
+        </dept_name>
+        <no_of_employees>20</no_of_employees>
+        <avg_salary>55000</avg_salary>
+    </accounts>
+    <hr gown_color="red" years="1999">
+        <dept_name>
+            <center>Aptech</center>
+            <location>New York</location>
+        </dept_name>
+        <no_of_employees>15</no_of_employees>
+        <avg_salary>50000</avg_salary>
+    </hr>
+    <acadamics gown_color="yellow">
+        <dept_name>
+            <center>Aptech</center>
+            <location>New York</location>
+        </dept_name>
+        <no_of_employees>100</no_of_employees>
+        <avg_salary>70000</avg_salary>
+        <labs>Computer Lab</labs>
+        <labs>Science Lab</labs>
+    </acadamics>
+</aptech>

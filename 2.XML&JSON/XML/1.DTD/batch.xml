@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone = "no" ?>
+<!DOCTYPE Batch SYSTEM "BATCH.dtd">
+<BATCH>
+<S>
+    	<ID> 12345</ID>
+    	<Name>HAMZA</Name>
+	<SEM> DISM </SEM>
+	<Marks remarks="Good"> 100 </Marks>
+  </S>
+<S>
+    	<ID> 12345</ID>
+    	<Name>HAMZA</Name>
+	<SEM> DISM </SEM>
+	<Marks remarks="Good"> 100 </Marks>
+  </S>
+</BATCH>

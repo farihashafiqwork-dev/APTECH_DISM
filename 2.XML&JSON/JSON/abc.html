@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Class Test </h1>
+
+<script>
+var aptech={
+    "batchcode":["2106b1","2010c1","2011c1","2110c1","2109c1","2101010"],
+    "faculty_details":{"name":"aatika","timings":"9-5","years":4}
+}
+document.write("<h1>Batch codes</h1>")
+for(var i=0;i<aptech.batchcode.length;i++)
+document.write(aptech.batchcode[i]+"<br>")
+
+
+document.write("<h1>Faculty  Details</h1>")
+for(key in aptech.faculty_details) 				//key is a variabke it can be anything else
+		{
+				document.write(key+':');    //Showing what key variable refers to
+                document.write(aptech.faculty_details[key]+'</br>');	 //Showing what key variable stores in it
+		
+		}
+    </script>
+</body>
+</html>

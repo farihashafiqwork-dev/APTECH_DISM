@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE libraray [
+    <!ELEMENT libraray (book*)>
+    <!ELEMENT book (name,author,publication)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT publication (#PCDATA)>
+    <!ELEMENT A (#PCDATA)>
+    <!ATTLIST name id CDATA  "AA">
+
+]>
+
+<libraray>
+
+    <book>
+        <name id="123">  Alif Bay</name>
+        <author> Zain</author>
+        <publication> 
+           KHJKHJKHJK
+        </publication>
+
+        </book>
+        
+        <book>
+            <name>  Alif Bay</name>
+            <author> Zain</author>
+            <publication> Abc house </publication>
+            </book>
+</libraray>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Untitled Document</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+
+document.write("<h1>JSON Datatype</h1>");	
+var student={
+	
+	"enrol_id"	: 6673,					 //int
+	"name" : "hashim",					//string
+	"eligible": true,	  				//bool
+	"marks": 98.8,	 				 //float 
+	"subject" : [ "XML","jSON","JAVA"],			//array
+	"intro":  {"naam":"moin","fname":"akhtar","location":"nazimabad"}	//key store json object or json data ( object with in a object)
+	
+	}; 
+
+//access the json variable for browser
+
+		document.write(student.enrol_id+'</br>');
+		document.write(student.name+'</br>');
+		document.write(student.eligble+'</br>');
+		document.write(student.marks+'</br>');
+		document.write(student.subject[1]+' '+student.subject[2]+'</br>');
+		document.write(student.intro.location+'</br>');
+		
+
+</script>
+</body> z
+</html>

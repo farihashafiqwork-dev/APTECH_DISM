@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="users.xsd">
+    <user>
+        <name>Fariha Shafiq</name>
+        <email>fariha@example.com</email>
+        <age>22</age>
+    </user>
+    <user>
+        <name>Aatika</name>
+        <email>aatika@example.com</email>
+        <age>30</age>
+    </user>
+</users>

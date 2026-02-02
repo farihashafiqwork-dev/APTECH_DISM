@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name ="E">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name ="Employee" maxOccurs ="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name ="EName" type ="xs:string"/>
+              <xs:element name ="Empno" type ="xs:string"/>
+              <xs:element name ="Designation">
+                <xs:simpleType>
+                  <xs:restriction base ="xs:string">
+                    <xs:enumeration value ="Faculty member"/>
+                    <xs:enumeration value ="Academic Coordinator"  />
+                    <xs:enumeration value ="CAH"/>
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name ="Salary" type ="xs:integer"/>
+              <xs:element name ="CNIC">
+                <xs:simpleType>
+                  <xs:restriction base ="xs:string">
+                    <xs:pattern value ="[0-9]{5}-[0-9]{7}-[0-9]{1}"/>                     
+                  </xs:restriction>
+                </xs:simpleType>                
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>    
+  </xs:element>
+</xs:schema>

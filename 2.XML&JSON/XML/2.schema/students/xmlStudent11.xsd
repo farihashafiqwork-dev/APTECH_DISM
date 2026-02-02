@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name ="S">
+    <xs:complexType>      
+      <xs:sequence minOccurs ="3" maxOccurs ="10">
+        <xs:element name ="Student">
+          <xs:complexType>            
+            <xs:all>
+              <xs:element name ="Name">
+                <xs:complexType>
+                    <xs:simpleContent>
+                    <xs:extension base ="xs:string">
+                      <xs:attribute name ="gender" use ="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>                             
+                </xs:complexType>
+              </xs:element>              
+              <xs:element name ="Enroll" type ="xs:string"/>
+              <xs:element name ="Semester">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base ="xs:string">
+                      <xs:attribute name ="book" use ="required" type ="xs:string"/>
+                    </xs:extension>
+                  </xs:simpleContent>                  
+                </xs:complexType>
+              </xs:element>              
+              <xs:element name ="Module" type ="xs:string"/>
+              <xs:element name ="age">
+                <xs:simpleType>
+                  <xs:restriction base ="xs:integer">                                        
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>              
+            </xs:all>
+            <xs:attribute name ="s_id" type ="xs:string" use ="required"/>                          
+          </xs:complexType>          
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>    
+  </xs:element>
+</xs:schema>

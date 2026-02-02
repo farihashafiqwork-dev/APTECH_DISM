@@ -1,0 +1,4 @@
+Write an XML code for deptartments in aptech, (Accounts,Acadamics,HR) dept tag should contain the following information dept name, no of employes, avg salary.
+also make DTD for the same. include entities for center name and location in dept name tag, 2 ATTRIBUTES (gown color[Implied]in dept tag,years[Default 2000]) in 
+avg salary tag, also add floor tag which is optional.
+ 

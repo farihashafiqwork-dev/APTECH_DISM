@@ -1,0 +1,38 @@
+CATALOG {
+    background-color: aqua;
+    width: 100%;
+}
+CD {
+display: block;
+background-color: pink;
+box-shadow:white 10px;
+margin-bottom:10px
+}
+TITLE {
+    display: block;
+    color: red;
+    font-size: 20px;
+}
+ARTIST {
+    display: block;
+    color: blue;
+    font-size: 20pt;
+}
+ PRICE{
+    display: block;
+    color: green;
+    margin-left: 20pt;
+}
+YEAR, COMPANY {
+    display: block;
+    color: black;
+    margin-left: 20pt;
+}
+COUNTRY{
+    display: block;
+    color: white;
+    margin-left: 20pt;
+}
+CD:hover{
+background-color: yellow;
+}

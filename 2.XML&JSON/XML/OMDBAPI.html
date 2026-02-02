@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+
+
+<script>
+var name=prompt("enter movie name")
+const api_url = "https://www.omdbapi.com/?t="+name+"&apikey=578288f5";
+ getapi(api_url);
+   
+async function getapi(url) {
+    const response = await fetch(url);
+    var data = await response.json();
+    show(data);
+}
+
+
+
+function show(data) {
+    document.getElementById("employees").innerHTML = data.Writer;
+}
+</script>
+
+      <p id="employees"></p>
+
+</body>
+</html> 

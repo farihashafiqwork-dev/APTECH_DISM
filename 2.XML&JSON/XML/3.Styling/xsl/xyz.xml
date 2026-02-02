@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="xyz.xsl"?>
+<students>
+<stu>
+<name> TOOBA </name>
+<hobby>SRO </hobby>
+</stu>
+<stu>
+<name> SUMAIRA </name>
+<hobby> CHEEKHNA </hobby>
+</stu>
+</students>

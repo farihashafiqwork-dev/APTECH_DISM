@@ -1,0 +1,129 @@
+Level-1
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE note [
+  <!ELEMENT note (To,From,Message)>
+  <!ELEMENT To (#PCDATA)>
+  <!ELEMENT From (#PCDATA)>
+  <!ELEMENT Message (#PCDATA)>
+]>
+<note>
+  <To>Huda</To>
+  <From>Sahar</From>
+  <Message>Hello</Message>
+</note>
+
+Level-2
+=======
+Adding Attributes-------
+-----------------------------------------------------
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE note [
+  <!ELEMENT note (To,From,name,Message)>
+  <!ELEMENT To (#PCDATA)>
+  <!ELEMENT From (#PCDATA)>
+  <!ELEMENT Message (#PCDATA)>
+  <!ELEMENT name (#PCDATA)>
+  <!ATTLIST name firstName CDATA #REQUIRED>
+  <!ATTLIST name LastName CDATA #IMPLIED>
+  <!ATTLIST Message Subject CDATA #REQUIRED>  
+]>
+<note>
+  <To>Huda</To>
+  <From>Sahar</From>
+  <name firstName ="Sahar" LastName ="Mushtaq"> Sahar Mushtaq</name>
+  <Message Subject ="Important">Hello</Message>
+</note>
+
+Level-3
+=======
+Making several notes (Add plus sign or * sign) 
+<?xml version="1.0" encoding="utf-8"?>
+---------------------------------------------------------------
+<!DOCTYPE notes [
+  <!ELEMENT notes (note+)>
+  <!ELEMENT note (To,From,name,Message)>
+  <!ELEMENT To (#PCDATA)>
+  <!ELEMENT From (#PCDATA)>
+  <!ELEMENT Message (#PCDATA)>
+  <!ELEMENT name (#PCDATA)>
+  <!ATTLIST name firstName CDATA #REQUIRED>
+  <!ATTLIST name LastName CDATA #IMPLIED>
+  <!ATTLIST Message Subject CDATA #REQUIRED>  
+]>
+<notes>
+<note>
+  <To>Huda</To>
+  <From>Sahar</From>
+ <name firstName ="Sahar" LastName ="Mushtaq"> Sahar Mushtaq</name>
+  <Message Subject ="Important">Hello</Message>
+</note>
+<note>
+  <To>Emaan</To>
+  <From>Sahar</From>
+  <name firstName ="Sahar" LastName ="Mushtaq"> Sahar Mushtaq</name>
+  <Message Subject ="Important">Hello</Message>
+</note>
+  <note>
+    <To>Sumaira</To>
+    <From>Sahar</From>
+  <name firstName ="Sahar" LastName ="Mushtaq"> Sahar Mushtaq</name>
+    <Message Subject ="Important">Hello</Message>
+  </note>
+</notes>
+
+Level-4
+=======
+Showing #Fixed,#Implied and #Required Attributes
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE notes [
+  <!ELEMENT notes (note+)>
+  <!ELEMENT note (To,From,name,Message)>
+  <!ELEMENT To (#PCDATA)>
+  <!ELEMENT From (#PCDATA)>
+  <!ELEMENT Message (#PCDATA)>
+  <!ELEMENT name (#PCDATA)>
+  <!ATTLIST name firstName CDATA #REQUIRED>
+  <!ATTLIST name LastName CDATA #IMPLIED>
+  <!ATTLIST Message Subject CDATA #FIXED "Subject Line">  
+]>
+<notes>
+<note>
+  <To>Huda</To>
+  <From>Sahar</From>
+ <name firstName ="Sahar" LastName ="Mushtaq"> Sahar Mushtaq</name>
+  <Message Subject="Subject Line">Hello</Message>
+</note>
+<note>
+  <To>Emaan</To>
+  <From>Sahar</From>
+   <name firstName ="Sahar" LastName ="Mushtaq"> Sahar Mushtaq</name>
+  <Message Subject ="Subject Line">Hello</Message>
+</note>
+  <note>
+    <To>faiza</To>
+    <From>Sahar</From> <name firstName ="Sahar" LastName ="Mushtaq"> Sahar Mushtaq</name>
+    <Message Subject ="Subject Line">Hello</Message>
+  </note>
+</notes>
+
+Level-5
+======
+External DTD
+------------
+dtdCustomer.dtd
+---------------
+<!ELEMENT Customer (CustName,CustAddress)>
+<!ELEMENT CustName (#PCDATA)>
+<!ELEMENT CustAddress (#PCDATA)>
+
+
+Customer.xml
+------------
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Customer SYSTEM "dtdCustomer.dtd">
+<Customer>
+  <CustName>ali</CustName>
+  <CustAddress>R-89</CustAddress>
+</Customer>

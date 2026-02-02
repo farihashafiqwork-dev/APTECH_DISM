@@ -1,0 +1,7 @@
+  <!ELEMENT BATCH (S)*>
+  <!ELEMENT S (ID,Name,Sem,Marks)>
+  <!ELEMENT ID (#PCDATA)> 
+  <!ELEMENT Name (#PCDATA)>
+  <!ELEMENT Sem (#PCDATA)>
+  <!ELEMENT Marks (#PCDATA)>
+  <!ATTLIST Marks Remarks CDATA #IMPLIED>

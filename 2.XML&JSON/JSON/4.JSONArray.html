@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Untitled Document</title>
+</head>
+<body>
+
+<script type="text/javascript">
+		
+document.writeln("<h1>Access JsOn Array data using for loop</h1>");
+
+var aptech ={
+"semester": ["CPISM","DISM","HDSE-I","HDSE-II","ADSE-I","ADSE-II"],
+ "records" :[	{"name" :"Ali","bc":"1611c1"},  {"name" :"wasiq","bc":"1702d1"}		]	
+
+}; 
+
+document.writeln("<h1>Access JSON Array data using nested for</h1>");	
+//3rd
+		// for(key in aptech.records)
+		// {
+		// 	for(inner_key in aptech.records[key])
+		// 	{
+		// 		document.write(aptech.records[key][inner_key]+'</br></br>');
+		// 	}
+		// }
+
+		for (abc in aptech){
+		
+		for(key in aptech.semester)
+		{
+			document.write( aptech.semester[key]+"<br>");
+		
+		}
+		for(def in aptech.records)
+		{
+			for(inner_key in aptech.records[def])
+			{
+				document.write(aptech.records[def][inner_key]+'</br>');
+			}
+		}
+
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 		for(key in aptech)
+// 		{
+			
+// 			document.write(aptech[key]+'<br>');
+		
+// 		}
+
+
+
+// document.writeln("<h1>Access JSON Array data using for</h1>");	
+// //2nd
+// 		for(index=0 ; index<= aptech.semester.length-1;index++)
+// 		{
+			
+// 			document.write(aptech.semester[index]+'</br>');
+		
+// 		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+</script>
+</body>
+</html>

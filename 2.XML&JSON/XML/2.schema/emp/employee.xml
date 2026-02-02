@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<E xmlns:xsi ="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:noNamespaceSchemaLocation ="emp schema.xsd">
+<Employee>
+  <EName>faiza</EName>
+  <Empno>1200</Empno>
+  <Designation>Faculty member</Designation>
+  <Salary>1200</Salary>
+  <CNIC>42101-2345667-1</CNIC>
+</Employee>
+<Employee>
+  <EName>faiza</EName>
+  <Empno>1200</Empno>
+  <Designation>Academic Coordinator</Designation>
+  <Salary>1200</Salary>
+  <CNIC>42101-2345667-1</CNIC>
+</Employee>
+<Employee>
+  <EName>faiza</EName>
+  <Empno>1200</Empno>
+  <Designation>Faculty member</Designation>
+  <Salary>1200</Salary>
+  <CNIC>42101-2345667-1</CNIC>
+</Employee>
+</E>

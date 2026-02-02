@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE notes  [
+<!ELEMENT notes (note*)>
+<!ELEMENT note (To,From,name,Message)>
+<!ELEMENT To (#PCDATA)>
+<!ELEMENT From (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT Message (#PCDATA)>
+<!ATTLIST name firstName CDATA #REQUIRED>
+<!ATTLIST name LastName CDATA #REQUIRED>
+<!ATTLIST Message Subject CDATA #REQUIRED>
+<!ENTITY loc "North Nazimabad">
+]>
+<notes>
+<note>
+    <To>Huda</To>
+    <From>Sahar &loc;</From>
+    <name firstName ="Sahar" LastName ="Mushtaq"> Sahar Mushtaq</name>
+    <Message Subject ="Important">Hello</Message>
+  </note>
+<note>
+    <To>Huda</To>
+    <From>Sahar &loc;</From>
+    <name firstName ="Sahar" LastName ="Mushtaq"> Sahar Mushtaq</name>
+    <Message Subject ="Important">Hello</Message>
+  </note>
+<note>
+    <To>Huda</To>
+    <From>Sahar &loc;</From>
+    <name firstName ="Sahar" LastName ="Mushtaq"> Sahar Mushtaq</name>
+    <Message Subject ="Important">Hello</Message>
+  </note>
+  
+<note>
+    <To>Huda</To>
+    <From>Sahar &loc;</From>
+    <name firstName ="Sahar" LastName ="Mushtaq"> Sahar Mushtaq</name>
+    <Message Subject ="Important">Hello</Message>
+  </note>
+</notes>
+  

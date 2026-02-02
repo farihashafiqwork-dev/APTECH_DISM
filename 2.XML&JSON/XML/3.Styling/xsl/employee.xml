@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href = "employee.xsl"?>
+<E>
+<Employee>  
+  <EName>faiza</EName>
+  <Empno>2345</Empno>  
+  <Designation>Academic Coordinator</Designation>
+  <sal>30000</sal>
+</Employee>
+<Employee>
+  <EName>ali</EName>
+  <Empno>7888</Empno>
+  <Designation>Academic Coordinator</Designation>
+  <sal>12000</sal>
+</Employee>
+<Employee>
+  <EName>farah</EName>
+  <Empno>9475</Empno>
+  <Designation>Faculty Member</Designation>
+  <sal>40000</sal>
+</Employee>
+<Employee>
+  <EName>aqsa</EName>
+  <Empno>9475</Empno>
+  <Designation>Faculty Member</Designation>
+  <sal>1500</sal>
+</Employee>
+<Employee>
+  <EName>aqsa</EName>
+  <Empno>9475</Empno>
+  <Designation>Faculty Member</Designation>
+  <sal>1500</sal>
+</Employee>
+<Employee>
+  <EName>aqsa</EName>
+  <Empno>9475</Empno>
+  <Designation>Faculty Member</Designation>
+  <sal>50000</sal>
+</Employee>
+</E>
+

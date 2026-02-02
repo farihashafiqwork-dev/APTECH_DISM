@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<html>
+
+<body style="background-color: skyblue;"> 
+  <div style="padding: 50px;margin:50px;text-align: center;font-size: x-large; background: linear-gradient(to bottom, #33ccff 0%,  #66a6ff);border: black solid 5px;"> 
+        
+    <h1> WEATHER STATION </h1> <BR>
+    <input type="text" name="" id="dataa" placeholder="Enter your city" class="form-control"><br>
+        <input type="submit" name="" id="" value="click Here" onclick="funcc()" class="form-control btn-dark"> <br>
+
+        <script>
+
+            function funcc() {
+                var city = document.getElementById("dataa").value
+                const api_url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=70a380d36e6124b99966916693b21d20&units=metric";
+                async function getapi(url) {
+                    const response = await fetch(url);
+                    var data = await response.json();
+                    show(data);
+                }
+
+                getapi(api_url);
+                function show(data) {
+                    document.getElementById("x").innerHTML = data.main.temp;
+                    document.getElementById("y").innerHTML = data.main.feels_like;
+                    var y=data.weather[0].icon;
+                    var link="https://openweathermap.org/img/w/"+y+".png"
+                    document.getElementById("z").src=link
+
+
+
+                }
+            }
+        </script>
+
+        <p id="x"></p>
+        <p id="y"></p>
+        <p ><img id="z" src= alt="" srcset=""></p>
+
+    </div>
+   
+</body>
+
+</html>

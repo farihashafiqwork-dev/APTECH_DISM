@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="practice.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<s>
+<person>
+  <firstname>Ab</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+<person>
+  <firstname>Abdullah</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+<person>
+  <firstname>Abdullah</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+<person>
+  <firstname>Abdullah</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+<person>
+  <firstname>Abdullah</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+<person>
+  <firstname>Abdullah</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+<person>
+  <firstname>Abdullah</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+<person>
+  <firstname>Abdullah</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+<person>
+  <firstname>Abdullah</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+<person>
+  <firstname>Abdullah</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+<person>
+  <firstname>Abdullah</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+<person>
+  <firstname>Abdullah</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+<person>
+  <firstname>Abdullah</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+<person>
+  <firstname>Abdullah</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+<person>
+  <firstname>Abdullah</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+<person>
+  <firstname>Abdullah</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+<person>
+  <firstname>Abdullah</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+<person>
+  <firstname>Abdullah</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+<person>
+  <firstname>Abdullah</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+<person>
+  <firstname>Abdullah</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+<person>
+  <firstname>Abdullah</firstname>
+  <lastname>Manzoor</lastname>
+  <age>100</age>
+  <skills>js</skills>
+</person>
+
+</s>

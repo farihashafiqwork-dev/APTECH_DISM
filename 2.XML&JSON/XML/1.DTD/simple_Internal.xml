@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE notes [
+<!ELEMENT notes (note*)>
+<!ELEMENT note (To,From,name,Message)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT To (#PCDATA)>
+<!ELEMENT From (#PCDATA)>
+<!ELEMENT Message (#PCDATA)>
+<!ATTLIST name firstName CDATA #IMPLIED LastName CDATA #IMPLIED>
+<!ATTLIST Message Subject CDATA #IMPLIED>
+<!ENTITY ap "APTECH COMPUTER EDUCATION">
+
+
+
+]>
+<notes>
+    <note>
+        <To>Huda</To>
+        <From firstName="">Sahar</From>
+        <name firstName="Sahar" LastName="Mushtaq">Sahar Mushtaq</name>
+        <Message Subject="Important">Hello &ap;</Message>
+    </note>
+
+    <note>
+        <To>Huda</To>
+        <From>Sahar</From>
+        <name firstName="Sahar" LastName="Mushtaq">Sahar Mushtaq</name>
+        <Message Subject="Important">Hello &ap;</Message>
+    </note>
+
+    <note>
+        <To>Huda</To>
+        <From>Sahar</From>
+        <name firstName="Sahar" LastName="Mushtaq">Sahar Mushtaq</name>
+        <Message Subject="Important">Hello</Message>
+    </note>
+
+    <note>
+        <To>Huda</To>
+        <From>Sahar</From>
+        <name firstName="Sahar" LastName="Mushtaq">Sahar Mushtaq</name>
+        <Message Subject="Important">Hello</Message>
+    </note>
+</notes>

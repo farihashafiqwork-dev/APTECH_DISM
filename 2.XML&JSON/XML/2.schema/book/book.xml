@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<books xmlns:xsi ="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation ="book.xsd" >
+  <Book>
+    <Book_id>12</Book_id>
+    <Author>Sedra Smith</Author>
+    <Title>XML By Example</Title>
+  </Book>
+  <Book>
+    <Book_id>12</Book_id>
+    <Author gender ="Male">Sedra Smith</Author>
+    <Title>XML By Example</Title>
+  </Book>
+  <Book>
+    <Book_id>12</Book_id>
+    <Author>Sedra Smith</Author>
+    <Title>XML By Example</Title>
+  </Book>
+  <Book>
+    <Book_id>233</Book_id>
+    <Author>Sedra Smith</Author>
+    <Title>eafea</Title>
+  </Book>
+</books>
