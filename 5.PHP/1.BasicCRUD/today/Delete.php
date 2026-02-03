@@ -1,0 +1,12 @@
+<?php
+include('connect.php');
+$idd=$_GET['id'];
+$qq="delete from practice where Id='$idd'";
+$res=mysqli_query($con,$qq);
+if($res){
+echo "<script>alert('Record Deleted'); window.location.href='read.php'; </script>";
+}
+else{
+echo "<script>alert('error');</script>";
+}
+?>
