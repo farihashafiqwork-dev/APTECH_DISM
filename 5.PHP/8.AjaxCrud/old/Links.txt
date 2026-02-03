@@ -1,0 +1,15 @@
+What is ajax:
+https://www.w3schools.com/jquery/jquery_ajax_intro.asp
+post back concept pic
+
+What is jquery:
+https://www.w3schools.com/jquery/jquery_syntax.asp
+
+ajax methods:
+https://www.w3schools.com/jquery/jquery_ref_ajax.asp
+
+ajax():
+https://www.w3schools.com/jquery/ajax_ajax.asp
+
+live search:
+https://www.webslesson.info/2016/03/ajax-live-data-search-using-jquery-php-mysql.html
