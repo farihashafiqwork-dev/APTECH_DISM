@@ -1,0 +1,25 @@
+Mail In PHP
+
+1) xampp -> sendmail -> sendmail.ini
+
+smtp_server=smtp.gmail.com
+
+auth_username=lab1807c1@gmail.com
+auth_password=Aptech1807c1
+
+2) xampp -> php -> php.ini
+comment these two lines
+; SMTP=localhost
+; smtp_port=25
+
+sendmail_from =lab1807c1@gmail.com
+sendmail_path ="C:/xampp/sendmail/sendmail.exe -t"
+
+
+3)Restart Apache
+
+To check errors
+xampp -> sendmail -> error.log
+
+
+Link: https://www.youtube.com/watch?v=4_NP_WYFmIM
