@@ -1,0 +1,35 @@
+
+Regix For Name.
+
+"^[A-Za-z]+\s?[A-Za-z]+"
+    
+Regix For Phone NO.
+
+"^\d{4}-?\d{7}"
+         
+Regix For Email
+
+"^[A-Za-z0-9-_]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,4})"
+           
+
+
+
+
+link : https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_input_pattern
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The input pattern attribute</h1>
+
+<form action="/action_page.php">
+  <label for="country_code">Country code:</label>
+  <input type="text" id="country_code" name="country_code" pattern="^[A-Za-z]+\s?[A-Za-z]+$" title="Three letter country code"><br><br>
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> The pattern attribute of the input tag is not supported in Safari 10 (or earlier).</p>
+
+</body>
+</html>

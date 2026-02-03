@@ -1,0 +1,14 @@
+<?php
+
+function PageName() {
+  return substr($_SERVER["SCRIPT_NAME"],strrpos($_SERVER["SCRIPT_NAME"],"/")+1);
+}
+
+$current_page = PageName();
+
+?>
+
+
+
+
+<li class="<?php echo $current_page == 'index.php' ? 'active':NULL ?>"><a href="index.php">index.php</a></li>
