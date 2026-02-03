@@ -1,0 +1,46 @@
+<?php
+include "connect.php";
+if(isset($_POST['submit'])){
+	$nam=$_POST['name'];
+	$des=$_POST['description'];
+    $file=$_FILES['file1']['name'];
+    $filetemp=$_FILES['file1']['tmp_name'];
+    $filesize=$_FILES['file1']['size'];
+    $filetype=$_FILES['file1']['type'];
+    $folder="image/";
+    if(is_uploaded_file($_FILES['file1']['tmp_name'])){
+    if($filetype=="image/jpeg" || $filetype=="image/jpg" || $filetype=="image/png"){
+      if($filesize<=1000000)  
+      {
+        $path=$folder.$file;
+       $q="update adimage set Name='$nam',Image='$path',Description='$des' where Id='$myid'";
+       move_uploaded_file($filetemp,$path);
+       $run=mysqli_query($con,$q);
+       if($run){
+           echo "<script>alert('ue');window.location.href='galleryshow.php';</script>";
+       }
+       else{
+           echo mysqli_error($con);
+       }
+      
+      }
+      else {
+          echo "size error";
+      }
+    }
+    else {echo "filetype not correct";}
+  }
+  else{
+       $q="update adimage set Name='$nam',Description='$des' where Id='$myid'";
+       $run=mysqli_query($con,$q);
+       if($run){
+           echo "<script>alert('update');window.location.href='galleryshow.php';</script>";
+       }
+       else{
+           echo mysqli_error($con);
+              }
+  
+  }
+}
+
+?>
