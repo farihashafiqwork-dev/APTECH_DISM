@@ -1,0 +1,170 @@
+1. {{ 7+2 }}
+This is the Blade echo statement.
+
+
+
+2. {!! <SCRIPT>alert("hello world")</SCRIPT> !!}
+The {!! !!} syntax in Blade is used for unescaped output.
+
+
+
+@php Directive
+@php
+    $result = 7 + 2;
+    echo "The result is: $result";
+@endphp
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blade Syntax Examples</title>
+</head>
+<body>
+    <h1>Blade Syntax Examples</h1>
+
+    <!-- Blade Echo -->
+    <p>7 + 2 = {{ 7 + 2 }}</p>
+
+    <!-- Unescaped Output -->
+    <p>JavaScript Alert Example:</p>
+    {!! '<script>alert("hello world")</script>' !!}
+
+    <!-- PHP Code in Blade -->
+    <p>
+        @php
+            $sum = 7 + 2;
+            echo "Using @php: The sum of 7 and 2 is $sum";
+        @endphp
+    </p>
+</body>
+</html>
+
+Math Operations with Blade
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Operations</title>
+</head>
+<body>
+    <h1>Simple Math Operations in Blade</h1>
+    <p>7 + 3 = {{ 7 + 3 }}</p>
+    <p>10 - 4 = {{ 10 - 4 }}</p>
+    <p>5 * 6 = {{ 5 * 6 }}</p>
+    <p>20 / 4 = {{ 20 / 4 }}</p>
+</body>
+</html>
+
+
+
+Conditional Statements
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Example</title>
+</head>
+<body>
+    <h1>Conditional Example</h1>
+    @php
+        $age = 18;
+    @endphp
+
+    @if ($age < 18)
+        <p>You are not allowed to vote.</p>
+    @elseif ($age == 18)
+        <p>You are just eligible to vote!</p>
+    @else
+        <p>You are eligible to vote.</p>
+    @endif
+</body>
+</html>
+
+
+
+Looping with @foreach
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Example</title>
+</head>
+<body>
+    <h1>List of Fruits</h1>
+    @php
+        $fruits = ['Apple', 'Banana', 'Orange', 'Mango'];
+    @endphp
+
+    <ul>
+        @foreach ($fruits as $fruit)
+            <li>{{ $fruit }}</li>
+        @endforeach
+    </ul>
+</body>
+</html>
+
+
+Passing Variables to JavaScript
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass Variables to JavaScript</title>
+</head>
+<body>
+    <h1>Pass Variables to JavaScript</h1>
+    @php
+        $userName = "Aatika";
+    @endphp
+
+    <script>
+        let userName = "{{ $userName }}";
+        alert("Hello, " + userName + "!");
+    </script>
+</body>
+</html>
+
+
+Dynamic Dropdown with PHP
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Dropdown</title>
+</head>
+<body>
+    <h1>Select Your Favorite Color</h1>
+    @php
+        $colors = ['Red', 'Blue', 'Green', 'Yellow', 'Black'];
+    @endphp
+
+    <form method="POST" action="#">
+        <select name="color">
+            @foreach ($colors as $color)
+                <option value="{{ $color }}">{{ $color }}</option>
+            @endforeach
+        </select>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
